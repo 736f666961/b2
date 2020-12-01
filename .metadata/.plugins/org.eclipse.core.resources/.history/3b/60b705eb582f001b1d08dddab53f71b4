@@ -1,0 +1,86 @@
+package test;
+
+public class Person {
+	// Person Attributes
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String phoneNumber;
+//	private String personType = null;
+	
+	// For getting Id
+	public int getId() {
+		return id;
+	}
+	
+	// For setting Id
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	// For getting firstName
+	public String getFirstName() {
+		return firstName;
+	}
+	
+	// For setting firstName
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	
+	// For getting lastName
+	public String getLastName() {
+		return lastName;
+	}
+	
+	// For setting lastName
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	// For getting phoneNumber
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	
+	// For setting phoneNumber
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	
+	// Person Option Menu
+	public void showPersonMenu(String personType) {
+		System.out.println("1 - Enter " + personType + " id ?");
+		System.out.println("2 - Enter " + personType + " firstname ?");
+		System.out.println("3 - Enter " + personType + " lastname ?");
+		System.out.println("4 - Enter " + personType + " phone number ?");
+		System.out.println("5 - Show all " + personType + "s");
+	}
+
+	// For Adding 
+//	protected void add(ArrayList<String> array, String name, String type) {
+//		array.add(name);
+//		System.out.println("You added a " + type + " with name " + name);
+//	}
+	
+	// For Editing 
+//	protected void edit(ArrayList<String> array, String name, int index, String type) {
+//		array.set(index, name);
+//		System.out.println("You edited a " + type + " with new name " + name);
+//	}
+	
+	// For Deleting 
+//	protected void delete(ArrayList<String> array, int index, String type) {
+//		array.remove(index);
+//		System.out.println("You deleted a " + type);
+//	}
+	
+	// For showing the data
+//	protected void show(ArrayList<String> array, String type) {
+//		System.out.println(type + " are: ");
+//		
+//		for (String arr : array) {
+//			System.out.println(arr);
+//		}
+//	}
+}

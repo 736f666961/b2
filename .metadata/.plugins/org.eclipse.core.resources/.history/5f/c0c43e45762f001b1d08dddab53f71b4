@@ -1,0 +1,97 @@
+package test;
+
+public class Book{
+	// Book Attributes
+	private int id;
+	private String title;
+	private String author;
+	private String date;
+	
+	// For getting id
+	public int getId() {
+		return id;
+	}
+	
+	// For setting id
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	// For getting title
+	public String getTitle() {
+		return title;
+	}
+	
+	// For setting title
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	// For getting author
+	public String getAuthor() {
+		return author;
+	}
+	
+	// For setting author
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	
+	// For getting date
+	public String getDate() {
+		return date;
+	}
+	
+	// For setting date
+	public void setDate(String date) {
+		this.date = date;
+	}
+	
+	// Show book menu
+	public void showBookMenu() {		
+		System.out.println("1 - Enter book id ?");
+		System.out.println("2 - Enter book title ?");
+		System.out.println("3 - Enter book author ?");
+		System.out.println("4 - Enter book date ?");
+	}
+	
+	
+	
+	// For Showing help for adding operation
+//	public void adding(Book bookObj, ArrayList<String> BookNames) {
+//		// Show user what Book name want to create
+//		System.out.println("Enter the name of Book ?");
+//		Scanner scanBookName =  new Scanner(System.in);
+//		String BookName = scanBookName.nextLine();
+//		
+//		// Add Book name to Book names list
+//		bookObj.add(BookNames, BookName, "Book");
+//	}
+//	
+//	// For Showing help for editing operation
+//	public void editing(Book bookObj, ArrayList<String> BookNames) {
+//		// Show user what Book name want to edit
+//		System.out.println("Enter the index of Book ?");
+//		Scanner scanBookIndex =  new Scanner(System.in);
+//		int BookIndex = scanBookIndex.nextInt();
+//		
+//		// Show user what Book name want to edit
+//		System.out.println("Enter the name of Book ?");
+//		Scanner scanBookName =  new Scanner(System.in);
+//		String BookName = scanBookName.nextLine();
+//		
+//		// edit Book name to Book names list
+//		bookObj.edit(BookNames, BookName, BookIndex, "Book");
+//	}
+//	
+//	// For Showing help for deleting operation
+//	public void deleting(Book bookObj, ArrayList<String> BookNames) {
+//		// Show user what Book name want to edit
+//		System.out.println("Enter the index of Book ?");
+//		Scanner scanBookIndex =  new Scanner(System.in);
+//		int BookIndex = scanBookIndex.nextInt();
+//		
+//		// delete Book name to Book names list
+//		bookObj.delete(BookNames, BookIndex, "Book");
+//	}
+}

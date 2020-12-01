@@ -1,0 +1,46 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Book {
+	// For Showing help for adding operation
+	public void adding(Book bookObj, ArrayList<String> BookNames) {
+		// Show user what Book name want to create
+		System.out.println("Enter the name of Book ?");
+		Scanner scanBookName =  new Scanner(System.in);
+		String BookName = scanBookName.nextLine();
+		
+		// Add Book name to Book names list
+		bookObj.add(BookNames, BookName, "Book");
+	}
+	
+	// For Showing help for editing operation
+	public void editing(Book bookObj, ArrayList<String> BookNames) {
+		// Show user what Book name want to edit
+		System.out.println("Enter the index of Book ?");
+		Scanner scanBookIndex =  new Scanner(System.in);
+		int BookIndex = scanBookIndex.nextInt();
+		
+		// Show user what Book name want to edit
+		System.out.println("Enter the name of Book ?");
+		Scanner scanBookName =  new Scanner(System.in);
+		String BookName = scanBookName.nextLine();
+		
+		// edit Book name to Book names list
+		bookObj.edit(BookNames, BookName, BookIndex, "Book");
+	}
+	
+	// For Showing help for deleting operation
+	public void deleting(Book bookObj, ArrayList<String> BookNames) {
+		// Show user what Book name want to edit
+		System.out.println("Enter the index of Book ?");
+		Scanner scanBookIndex =  new Scanner(System.in);
+		int BookIndex = scanBookIndex.nextInt();
+		
+		// delete Book name to Book names list
+		bookObj.delete(BookNames, BookIndex, "Book");
+		
+		
+	}
+}

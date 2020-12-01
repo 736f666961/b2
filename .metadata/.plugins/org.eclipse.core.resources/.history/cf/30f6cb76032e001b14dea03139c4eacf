@@ -1,0 +1,197 @@
+package test;
+import java.util.ArrayList;
+import java.util.Scanner;  // Import the Scanner class
+
+public class Main {
+
+	public static void main(String[] args) {
+		// For storing students
+		ArrayList<String> studentsNames = new ArrayList<String>();
+		
+		// For storing books
+		ArrayList<String> booksNames = new ArrayList<String>();
+		
+		// For storing employees
+		ArrayList<String> employeesNames = new ArrayList<String>();
+		
+		// Create Student class obj
+		Students studentObj = new Students();
+				
+		// Create Book class obj
+		Book bookObj = new Book();
+		
+		// Create Employee class obj
+		Employee employeeObj = new Employee();
+		
+		// Show user options
+		showMenu();
+		
+		// make program running
+		boolean isRunning = true;
+		
+		// Make infinite options until user quit of program
+		while (isRunning) {
+			System.out.println("Choose one of the options [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] ?");
+			
+			// Get option from menu
+			Scanner scanOptions =  new Scanner(System.in);
+			int optionNumber = scanOptions.nextInt();
+			
+			// Track user options
+			switch (optionNumber) {
+				case 1: {
+					// Show help for adding and then adding student
+					studentObj.adding(studentObj, studentsNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				case 2: {
+					// Show help for editing and then editing student
+					studentObj.editing(studentObj, studentsNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 3: {
+					// Show help for deleting and then deleting student
+					studentObj.deleting(studentObj, studentsNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 4: {
+					// Show all students
+					studentObj.show(studentsNames, "Students");
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 5: {
+					// Show help for adding and then adding book
+					bookObj.adding(bookObj, booksNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 6: {
+					// Show help for editing and then editing book
+					bookObj.editing(bookObj, booksNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 7: {
+					// Show help for deleting and then deleting book
+					bookObj.deleting(bookObj, booksNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 8: {
+					// Show all books
+					bookObj.show(booksNames, "Books");
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 9: {
+					// Show help for adding and then adding employee
+					employeeObj.adding(employeeObj, employeesNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 10: {
+					// Show help for employee and then editing employee
+					employeeObj.editing(employeeObj, employeesNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 11: {
+					// Show help for deleting and then deleting employee
+					employeeObj.deleting(employeeObj, employeesNames);
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 12: {
+					// Show all employees
+					employeeObj.show(employeesNames, "Employees");
+					
+					// Show menu options again
+					showMenu();
+					
+					break;
+				}
+				
+				case 13: {
+					System.out.println("Exiting program");
+					isRunning = false;
+					break;
+				}
+					
+				default:
+					System.out.println("Unexpected option: " + optionNumber);
+					break;
+			}
+		}
+	}
+	
+	// For showing menu and get what user choose
+	private static void showMenu() {
+		// For Creating and Editing and Deleting Student options
+		System.out.println("1 - Do you want to create a student ?");
+		System.out.println("2 - Do you want to edit a student ?");
+		System.out.println("3 - Do you want to delete an student ?");
+		System.out.println("4 - Show all students ?");
+		
+		// For Creating and Editing and Deleting Book options
+		System.out.println("5 - Do you want to create a book ?");
+		System.out.println("6 - Do you want to edit a book ?");
+		System.out.println("7 - Do you want to delete an book ?");
+		System.out.println("8 - Show all books ?");
+		
+		// For Creating and Editing and Deleting Employee options
+		System.out.println("9 - Do you want to create an employee ?");
+		System.out.println("10 - Do you want to edit a employee ?");
+		System.out.println("11 - Do you want to delete an employee ?");
+		System.out.println("12 - Show all employees ?");
+		
+		// For quit of program
+		System.out.println("13 - Do you want to quit of program ?");
+	}	
+}

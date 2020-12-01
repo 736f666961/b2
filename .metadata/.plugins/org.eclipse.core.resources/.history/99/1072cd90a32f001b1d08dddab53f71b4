@@ -1,0 +1,16 @@
+package test;
+
+public class Employee extends Person{
+	// Employee Attributes
+	private int salary;
+
+	// For getting salary
+	public int getSalary() {
+		return salary;
+	}
+
+	// For setting salary
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+}

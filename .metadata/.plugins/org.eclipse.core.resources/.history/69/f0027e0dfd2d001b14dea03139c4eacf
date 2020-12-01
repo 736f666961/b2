@@ -1,0 +1,44 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Employee extends Operations{
+	// For Showing help for adding operation
+	public void adding(Employees EmployeeObj, ArrayList<String> EmployeesNames) {
+		// Show user what Employee name want to create
+		System.out.println("Enter the name of Employee ?");
+		Scanner scanEmployeeName =  new Scanner(System.in);
+		String EmployeeName = scanEmployeeName.nextLine();
+		
+		// Add Employee name to Employees names list
+		EmployeeObj.add(EmployeesNames, EmployeeName, "Employee");
+	}
+	
+	// For Showing help for editing operation
+	public void editing(Employees EmployeeObj, ArrayList<String> EmployeesNames) {
+		// Show user what Employee name want to edit
+		System.out.println("Enter the index of Employee ?");
+		Scanner scanEmployeeIndex =  new Scanner(System.in);
+		int EmployeeIndex = scanEmployeeIndex.nextInt();
+		
+		// Show user what Employee name want to edit
+		System.out.println("Enter the name of Employee ?");
+		Scanner scanEmployeeName =  new Scanner(System.in);
+		String EmployeeName = scanEmployeeName.nextLine();
+		
+		// edit Employee name to Employees names list
+		EmployeeObj.edit(EmployeesNames, EmployeeName, EmployeeIndex, "Employees");
+	}
+	
+	// For Showing help for deleting operation
+	public void deleting(Employees EmployeeObj, ArrayList<String> EmployeesNames) {
+		// Show user what Employee name want to edit
+		System.out.println("Enter the index of Employee ?");
+		Scanner scanEmployeeIndex =  new Scanner(System.in);
+		int EmployeeIndex = scanEmployeeIndex.nextInt();
+		
+		// delete Employee name to Employees names list
+		EmployeeObj.delete(EmployeesNames, EmployeeIndex, "Employees");
+	}
+}

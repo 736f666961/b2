@@ -1,0 +1,23 @@
+package test;
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// For storing students
+		ArrayList<String> students = new ArrayList<String>();
+		
+		// For storing books
+		ArrayList<String> books = new ArrayList<String>();
+		
+		// For storing employees
+		ArrayList<String> employees = new ArrayList<String>();
+		
+		
+		// Create Students class obj
+		Students std = new Students();
+		
+		std.add(students, "Sofia", "students");
+	}
+
+}
