@@ -43,8 +43,8 @@ public class Main {
 		
 		if (totalHours < 40) {
 			System.out.println("1 - You will get " + totalHours*price + " MAD");
-		}
-		else if(totalHours >= 40 && totalHours <= 60) {
+			
+		}else if(totalHours >= 40 && totalHours <= 60) {
 			extraHours = totalHours - 40;
 			compensation = extraHours * price;
 			int main = totalHours - extraHours;
